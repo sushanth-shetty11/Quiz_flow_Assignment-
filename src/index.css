@@ -1,0 +1,32 @@
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: #6b7280; /* Tailwind gray-600 for a neutral color */
+  animation: spin 1s linear infinite;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #f87171; /* Tailwind red-400 for a softer red color */
+}
+
+/* Add spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
